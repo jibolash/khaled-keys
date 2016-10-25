@@ -65,7 +65,7 @@
   ];
 
   function chooseOne(arr) {
-    return arr[parseInt((Math.random() * arr.length), 10)];
+    return arr[Math.floor(Math.random() * arr.length)];
   }
 
   window.onload = function() {
@@ -73,11 +73,11 @@
     var randomQuote = chooseOne(quotes);
 
     document.getElementById('background-image').style.backgroundImage = 'url("img/'+ randomImage +'")';
-    document.getElementsByTagName('quote')[0].innerHTML = randomQuote;
-    document.getElementsByTagName('author')[0].innerHTML = "&mdash; " +  'DJ Khaled' + " &mdash;";
-    // Start the CSS transtions
-    document.getElementsByTagName('quote')[0].className = 'move';
-    document.getElementsByTagName('author')[0].className = 'move';
+    document.getElementById('quote').innerHTML = randomQuote;
+    document.getElementById('author').innerHTML = "&mdash; " +  'DJ Khaled' + " &mdash;";
+
+    document.getElementById('quote').className = 'move';
+    document.getElementById('author').className = 'move';
   };
 
 })();

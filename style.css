@@ -16,7 +16,7 @@ body {
 }
 
 #background-image {
-  background: url("/img/153.jpg") no-repeat center center fixed;
+  background: url("img/1.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -38,23 +38,23 @@ body {
   align-items: center;
 }
 
-container {
+#container {
   /* compensates for translations and move things up a bit */
   margin-top: -150px;
 }
 
-quote {
+#quote {
   display: block;
   letter-spacing: 1px;
   line-height: 1.4em;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3em;
   color: rgba(255, 255, 255, 0);
   -webkit-transition: all 1.6s ease-out 0;
   transition: all 1.6s ease-out 0;
 }
 
-author {
+#author {
   display: block;
   font-size: 2em;
   font-style: italic;
@@ -64,14 +64,14 @@ author {
   transition: all 1.8s ease-out 1s;
 }
 
-quote.move {
+#quote.move {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 0 20px rgba(0,0,0,0.4);
   -webkit-transform: translate(0, 20px);
   transform: translate(0, 20px);
 }
 
-author.move {
+#author.move {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 0 0 20px rgba(0,0,0,0.3);
   -webkit-transform: translate(0, 40px);
@@ -79,21 +79,21 @@ author.move {
 }
 
 @media only screen and (max-width: 1024px) {
-  quote {
+  #quote {
     font-size: 3em;
   }
 
-  author {
+  #author {
     font-size: 1.8em;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  quote {
+  #quote {
     font-size: 1.5em;
   }
 
-  author {
+  #author {
     font-size: 1em;
   }
 }
